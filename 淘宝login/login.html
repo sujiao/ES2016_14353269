@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" type="text/css" href=".\css\main.css">
+	<link rel="icon" href=".\images\title.ico" type="image/x-icon"/>
+	<script type="text/javascript" src=".\css\taobao_icon.js"></script>
+	<script type="text/javascript" src=".\css\tousujianyi_icon.js"></script>
+	<script type="text/javascript" src=".\css\other-login.js"></script>
+	<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+	<meta charset="UTF-8">
+	<title>淘宝网——淘！我喜欢</title>
+	<script>
+       /* $(document).ready(function(){
+ 			 $("#cont-1 .nav img").click(function(){
+   			 	$("#cont-1").addClass("hide");
+				$("#cont-2").addClass("show");
+  			});
+ 			$("#cont-2 .nav img, #jump").click(function(){
+   			 	$("#cont-1").removeClass("hide");
+				$("#cont-2").removeClass("show");
+  			});
+		});*/
+     	$(document).ready(function(){
+        	var tab1 = document.getElementById('cont1-title');
+        	var tab2 = document.getElementById('cont2-title');
+        	var jump  = document.getElementById('jump');
+            var cont1 = document.getElementById('cont-1');
+            var cont2 = document.getElementById('cont-2');
+            /**
+             * var img1 = document.getElementById('cont-2').getElementsByClassName('nav')[0].getElementsByTagName('img')[0];
+             */            
+            
+        	console.log(tab1);
+            console.log(tab2);
+            console.log(jump);            
+           
+			tab1.onclick=function(event){
+                cont2.className = 'show';
+                cont1.className = 'hide';
+			}
+			tab2.onclick=function(event){
+                cont1.className = 'show';
+                cont2.className = 'hide';
+			}
+			jump.onclick=function(event){
+                cont1.className = 'show';
+                cont2.className = 'hide';				
+        	};        	
+        
+ 		});
+        //id=jump标签中写有onclick()时
+        // function changeToCont1(){
+        //     console.log("enen");
+        //     document.getElementById('cont-1').className = 'show';
+        //     document.getElementById('cont-2').className = 'hide';
+        // }
+    </script>
+    <style type="text/css">       
+		.hide
+		{
+			display: none;
+		}
+		.show
+		{
+			display:block;
+		}
+	</style>
+</head>
+<body>
+	<div id="page">
+	<div id="header">
+		<div id = "logo">
+    		<a href="https://www.taobao.com/" title="淘宝网">
+    			<svg class="icon" aria-hidden="true">
+    				<use xlink:href="#icon-taobaowang"></use>
+				</svg>
+			</a>
+    	</div>
+			
+		<div id = "band">为确保您账户的安全及正常使用，依《网络安全法》相关要求，6月1日起会员账户需绑定手机。如您还未绑定，请尽快完成，感谢您的理解及支持！
+		</div>
+
+        <div id = "survey">
+    		<a href="https://survey.taobao.com/survey/Q095thIx2">
+        		<svg class="icon_" aria-hidden="true">
+    				<use xlink:href="#icon-tousujianyi"></use>
+				</svg><span>"登录页面"改进建议</span> 
+        	</a>  
+		</div>
+	</div>
+	<div id="content">
+		<div id="adlink" onclick="window.open('https://market.m.taobao.com/apps/abs/5/54/qixiqimiaoshijie?spm=a2107.1.0.0.732e11d9CzpAS1&_wvUseWKWebView=YES&psId=69378&pcPsId=69379')">
+		</div>
+
+    	<div id = "login">
+    	<div id="login-box">
+    		<div id="cont-1" class="show"><!--密码登录——标签内容-->
+    			<div class="login-title">密码登录</div>
+    			<!--标签切换-->
+    			<div class="nav"><img id="cont1-title" src=".\images\qr.png"></div>
+				<form action="register.jsp" method="post" enctype="application/x-www-form-urlencoded">
+					<div class="user">
+						<label for="user">
+							<i class="iconfont icon-seeusero"></i>
+						</label>
+						<input type="text" name="username" id="username" class="login-text" value maxlength="32" placeholder="会员名/邮箱/手机号">
+					</div>
+					<div class="pwd">
+						<label for="pwd">
+							<i class="iconfont icon-icon-password"></i>
+						</label>
+						<input type="text" name="password" id="password" class="login-text" value maxlength="32">
+					</div>
+					<div class="submit">
+						<button type="submit" data-ing="正在登录...">登 录</button>
+					</div>
+				</form>
+				<div class="other_login">					 
+					<a href="http://weibo.com/login.php?entry=taobao&amp;goto=https%3A%2F%2Flogin.taobao.com%2Faso%2Ftvs%3Fdomain%3Dweibo%26sid%3D8e6b7c41fb2d12d249c734ba0f553eee%26target%3D68747470733A2F2F7777772E74616F62616F2E636F6D2F&amp;goto2=https%3A%2F%2Fwww.taobao.com%2F" tabindex="4" class="weibo-login">
+						<svg class="icon_other_login" aria-hidden="true">
+					   		<use xlink:href="#icon-weibo"></use>
+						</svg>微博登录</a>	 
+					<a href="https://auth.alipay.com/login/index.htm?loginScene=7&amp;goto=https%3A%2F%2Fauth.alipay.com%2Flogin%2Ftaobao_trust_login.htm%3Ftarget%3Dhttps%253A%252F%252Flogin.taobao.com%252Fmember%252Falipay_sign_dispatcher.jhtml%253Ftg%253Dhttps%25253A%25252F%25252Fwww.taobao.com%25252F&amp;params=VFBMX3JlZGlyZWN0X3VybD1odHRwcyUzQSUyRiUyRnd3dy50YW9iYW8uY29tJTJG" tabindex="5" class="alipay-login">
+					<svg class="icon_other_login" aria-hidden="true">
+	    				<use xlink:href="#icon-zhifubao"></use>
+					</svg>支付宝登录</a> 		 
+				</div>
+				<div class="login_links">
+					<a href="https://passport.taobao.com/ac/password_find.htm?from_site=0&amp;login_id=&amp;lang=zh_CN&amp;app_name=&amp;tracelog=signin_main_pass" tabindex="6" class="forget-pwd" target="_blank">
+						忘记密码</a>
+					<a href="https://passport.taobao.com/ac/nick_find.htm?from_site=0&amp;lang=zh_CN&amp;app_name=tbTop" target="_blank">忘记会员名</a>
+					<a href="http://reg.taobao.com/member/newbie.htm?from=login" class="register" target="_blank" tabindex="7">免费注册</a>
+				</div>
+			</div>
+			<div id="cont-2" class="hide">   <!--标签内容-->
+				<div class="login-title">手机扫码，安全登录</div>
+				<!--标签切换-->
+				<div class="nav"><img id="cont2-title" src=".\images\pad.png"></div>
+				<div class="qrcode"><img src=".\images\qrcode.png"></div>
+				<div class="scan">
+					<div class="pic"><img src=".\images\scan.png"></div>
+					<div class="tools">
+						<p>打开&nbsp<a href="https://mpage.taobao.com/hd/download.html?spm=a2107.1.25847036.1.732e11d9M9hEqm" target="_blank"><span>手机淘宝&nbsp</span></a>|<a href="https://www.tmall.com/wow/portal/act/app-download?spm=a2107.1.25847036.2.732e11d9M9hEqm&mmstat=pc_login" target="_blank"><span>&nbsp手机天猫</span></a></p>
+						<p>扫一扫登录</p>
+					</div>
+				</div>
+				<div class="links">
+                    <!-- id=jump标签中写有onclick()时 -->
+					<!-- <a id="jump" onclick="changeToCont1()">密码登陆</a> -->
+                    <a id="jump" >密码登陆</a>
+					<a href="https://reg.taobao.com/member/reg/fill_mobile.htm" target="_blank">免费注册</a>
+				</div>
+			</div>
+    	</div>
+    	</div>
+	</div>
+
+	<div id="footer">
+			<hr style=" height:1px;border:none;border-top:1px solid rgb(221,221,221);" />
+			<p class="footer-">
+	    		<a href="http://page.1688.com/shtml/about/ali_group1.shtml">阿里巴巴集团</a>
+	   			 <b>|</b>
+	    		<a href="http://www.alibaba.com">阿里巴巴国际站</a>
+	    		<b>|</b>
+	    		<a href="http://www.1688.com">阿里巴巴中国站</a>
+	    		<b>|</b>
+			    <a href="http://www.aliexpress.com">全球速卖通</a>
+			    <b>|</b>
+			    <a href="http://www.taobao.com">淘宝网</a>
+			    <b>|</b>
+			    <a href="http://www.tmall.com">天猫</a>
+			    <b>|</b>
+			    <a href="http://ju.taobao.com">聚划算</a>
+			    <b>|</b>
+			    <a href="http://www.etao.com">一淘</a>
+			    <b>|</b>
+			    <a href="http://www.alimama.com">阿里妈妈</a>
+			    <b>|</b>
+			    <a href="https://www.fliggy.com">飞猪</a>
+			    <b>|</b>
+			    <a href="http://www.xiami.com">虾米</a>
+			    <b>|</b>
+			    <a href="http://www.aliyun.com">阿里云计算</a>
+			    <b>|</b>
+			    <a href="http://www.yunos.com">云OS</a>
+			    <b>|</b>
+			    <a href="http://www.net.cn">万网</a>
+			    <b>|</b>
+			    <a href="http://www.alipay.com">支付宝</a>
+			    <b>|</b>
+			    <a href="http://www.laiwang.com/">来往</a>
+			</p>	
+			<hr style=" height:1px;border:none;border-top:1px solid rgb(221,221,221);" />
+			<p class="footer-">
+		    	<a href="http://www.taobao.com/about">关于淘宝</a>
+		    	<a href="http://www.taobao.com/about/partners.php">合作伙伴</a>
+		    	<a href="http://pro.taobao.com">营销中心</a>
+		    	<a href="mailto:lianzheng@taobao.com" title="lianzheng@taobao.com" target="_self">廉正举报</a>
+		    	<a href="http://service.taobao.com/support/main/service_route.htm">联系客服</a>
+		    	<a href="http://open.taobao.com">开放平台</a>
+		    	<a href="http://www.taobao.com/about/join.php">诚征英才</a>
+		    	<a href="https://consumerservice.taobao.com/contact-us?spm=a21bo.50862.1997523009.35.5dcec6f7zikHQ3">联系我们</a>
+		    	<a href="http://www.taobao.com/sitemap.php">网站地图</a>
+		    	<a href="http://terms.alicdn.com/legal-agreement/terms/suit_bu1_taobao/suit_bu1_taobao201703241622_61002.html">法律声明及隐私权政策</a>
+		    	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>© 2018 Taobao.com 版权所有</span>
+	    	</p>
+			<p class="footer-">
+		    	<span>网络文化经营许可证：浙网文[2016]0132-032号</span>
+		    	<b>|</b>
+		    	<span>增值电信业务经营许可证：浙B2-20080224-1</span>
+		    	<b>|</b>
+		    	<span>信息网络传播视听节目许可证：1109364号</span>
+	    	</p>
+	    	<p class="footer-">
+		    	<a href="http://www.pingpinganan.gov.cn/web/index.aspx?spm=a2107.1.1997523009.27.732e11d9zgqcgT&file=index.aspx">
+		    		<img width="36" height="36" src="https://assets.alicdn.com/apps/login/static/css/images/wj.gif">
+		   		</a>
+		   	</p>
+
+</body>
+</html>

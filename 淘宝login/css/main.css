@@ -1,0 +1,99 @@
+	 .icon {
+	       width: 110px; height:70px;
+	       fill: currentColor;
+	       overflow: hidden;
+	    }
+	 .icon_ {
+	       width: 18px; height:18px;
+	       fill: rgb(255, 68, 0);
+	       overflow: hidden;
+	    }
+	 .icon_other_login{
+	       width: 16px; height:16px;
+	       fill: currentColor;
+	       overflow: hidden;
+	    }
+
+@font-face {font-family: "iconfont";
+  src: url('//at.alicdn.com/t/font_791194_5hrfnxdxg77.eot?t=1534320613489'); /* IE9*/
+  src: url('//at.alicdn.com/t/font_791194_5hrfnxdxg77.eot?t=1534320613489#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('data:application/x-font-woff;charset=utf-8;base64,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') format('woff'),
+  url('//at.alicdn.com/t/font_791194_5hrfnxdxg77.ttf?t=1534320613489') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('//at.alicdn.com/t/font_791194_5hrfnxdxg77.svg?t=1534320613489#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family:"iconfont" !important;
+  font-size:22px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-seeusero:before { content: "\e600"; }
+
+.icon-icon-password:before { content: "\e629"; }
+
+
+
+	* {margin:0}
+	a:hover {color:red;}
+	::selection {color:white; background-color:blue;}
+	#page {font-size:12px;color:rgb(108,108,108);}  
+	a:link {text-decoration: none;}
+	a {color:rgb(108,108,108);}
+	span{color:grey; font-size:12px;opacity: 0.8;}
+	#header {width:100%; height:88px;margin:0 auto;position: relative;}
+	#logo {top:13px;position:absolute; width:150px;padding-left:25px;margin-right: 50px;}
+	#band {left:220px;top:10px;position:absolute;border:solid rgb(255,180,168) 1px; background:rgb(254, 242, 242); width:900px;
+			text-align: center; margin: 10px 0 10px 0; padding: 5px; }
+	#survey {right:50px;bottom:10px;position:absolute;}
+
+	#content {height:600px; position: relative; background-position :center;
+			background-image: url(https://gtms04.alicdn.com/tps/i4/TB1_cbGm5QnBKNjSZFmSuwApVXa.jpg);
+			}
+
+	#adlink {position: absolute;width:630px;height:440px;left:80px;top:80px;}
+
+	#login {position:absolute;top:20%; right:8%; width:350px; height:350px;}
+
+	#login-box {width:300px;height:300px;padding: 25px 25px 23px; background:rgb(233, 233, 242); position: relative; margin:0 auto;}
+
+	.nav img{height: 52px;width:52px;position:absolute;top:0px;left:298px;}
+
+
+	.login-title {height: 18px;line-height: 18px; font-size: 16px; color: #3c3c3c;
+    margin-top: 9px; padding-bottom: 8px; font-weight: 700;}
+
+    .user,.pwd,.submit {position: relative;width:300px; border: 0px solid #ddd;margin:20px 0; height:40px;}
+
+	label {display: block; width: 40px; height: 40px; line-height: 40px; color: #fff;
+    background: #ddd; text-align: center; position: relative;}
+
+	input {position: absolute;left: 40px; top: 0;width:240px;padding: 9px 8px 11px 10px;}
+
+    .login-text {width: 240px; font-size: 14px; line-height: 18px; height: 18px;
+     border: 1px solid #ddd;}
+
+    .submit button {width: 300px; height: 42px; border: 0;  display: inline-block; overflow: hidden;
+    vertical-align: middle; line-height: 42px; font-size: 16px; font-weight: 700; color: #fff;
+    background: #f40; border-radius: 3px; cursor: pointer; zoom: 1;}
+
+	.other_login{height:20px;padding: 5px;word-spacing: 1em;}
+
+	.login_links{height:20px;padding:15px;text-align: right;word-spacing: 1em;}
+
+	.qrcode {position: absolute;left:105px; top:20%;}
+	.qrcode img{margin: 20px auto; height:140px;width:140px;}
+	.scan {position:absolute;top:70%;left:90px;height:36px;width:200px;}
+	.scan img {height:36px;width:34px;}
+    .scan .tools {position: absolute; top:0px;left:40px;}
+	.scan .tools span {color:red;}
+	.links {position: absolute;bottom: 20px; right: 35px; word-spacing: 1.2em;}
+
+	#footer {width:1180px;height:175px;margin:0 auto;padding:45px 0 0 20px;}
+
+	.footer- {padding:10px;}
+
+	
+	
